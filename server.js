@@ -22,9 +22,11 @@ app.get("/", (req, res) => {
 
 const airportRouter = require("./app/routes/airport.routes.js")();
 const promotionHomeRouter = require("./app/routes/promotionHome.routes.js")();
+const flightRouter = require("./app/routes/flight.routes.js")();
 
 app.use(airportRouter);
 app.use(promotionHomeRouter);
+app.use(flightRouter);
 
 app.get('*', function (req, res) {
   let response = {

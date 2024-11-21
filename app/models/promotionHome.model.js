@@ -1,7 +1,7 @@
 const sql = require("./db.js");
 
 // constructor
-const promotionHome = function(airport) {
+const promotionHome = function(promotion) {
 
 };
 
