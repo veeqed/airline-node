@@ -11,13 +11,14 @@ exports.findAll = (req, res) => {
             messages: err.messages
         }
 
-        res.send(response);
+        return res.send(response);
       }
       else
       {
         response = {
             status: 200,
-            data: data
+            data: data,
+            count: data.length
         }
     
         return res.send(response);

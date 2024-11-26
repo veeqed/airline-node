@@ -14,7 +14,7 @@ exports.findAll = (req, res) => {
         messages: err.messages
       }
 
-      res.send(response);
+      return res.send(response);
     }
     else
     {

@@ -15,6 +15,7 @@ Airport.getAll = result => {
 
     console.log("airports: ", res);
     result(null, res);
+    return;
   });
 };
 
